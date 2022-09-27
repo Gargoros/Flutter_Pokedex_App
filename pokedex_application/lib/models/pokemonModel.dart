@@ -26,17 +26,6 @@ class PokemonHub {
       });
     }
   }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['count'] = count;
-    data['next'] = next;
-    data['previous'] = previous;
-    if (results != null) {
-      data['results'] = results!.map((v) => v.toJson()).toList();
-    }
-    return data;
-  }
 }
 
 //Pokemon list data
@@ -49,12 +38,5 @@ class Pokemon {
   Pokemon.fromJson(Map<String, dynamic> json) {
     name = json['name'];
     url = json['url'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['name'] = this.name;
-    data['url'] = this.url;
-    return data;
   }
 }
