@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex_application/screens/homePage_screen.dart';
+import 'package:pokedex_application/screens/pokemonsPage.dart';
 
 void main() {
   runApp(const PokedexApp());
@@ -13,7 +13,7 @@ class PokedexApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Pokedex",
-      home: HomePageScreen(),
+      home: PokemonsPageScreen(),
     );
   }
 }
