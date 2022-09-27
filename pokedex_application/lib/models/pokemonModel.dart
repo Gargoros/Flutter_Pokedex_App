@@ -1,10 +1,19 @@
+//convert json to dart
+
+//main data
+
 class PokemonHub {
   int? count;
   String? next;
   String? previous;
   List<Pokemon>? results;
 
-  PokemonHub({this.count, this.next, this.previous, this.results});
+  PokemonHub({
+    this.count,
+    this.next,
+    this.previous,
+    this.results,
+  });
 
   PokemonHub.fromJson(Map<String, dynamic> json) {
     count = json['count'];
@@ -30,6 +39,7 @@ class PokemonHub {
   }
 }
 
+//Pokemon list data
 class Pokemon {
   String? name;
   String? url;
